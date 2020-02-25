@@ -41,6 +41,17 @@ public class CityAdapter extends RecyclerView.Adapter<CityAdapter.CityViewHolder
         return mCityList.size();
     }
 
+    public int getPositionForSection(char section) {
+        for (int i = 0; i < getItemCount(); i++) {
+            String group = mCityList.get(i).getGroup();
+            char firstChar = group.charAt(0);
+            if (firstChar == section) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     static class CityViewHolder extends RecyclerView.ViewHolder {
 
         TextView mTextViewCityName;

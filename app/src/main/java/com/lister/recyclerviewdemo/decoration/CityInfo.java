@@ -4,13 +4,18 @@ package com.lister.recyclerviewdemo.decoration;
 public class CityInfo {
 
     private String mCityName;
+    private String mPinYin;
     private String mGroup;
+    private String mCityID;
     private boolean mIsFirstInGroup;
     private boolean mIsLastInGroup;
 
-    public CityInfo(String cityName, String group, boolean isFirstInGroup, boolean isLastInGroup) {
+    public CityInfo(String cityName, String pinYin, String cityID,
+                    boolean isFirstInGroup, boolean isLastInGroup) {
         this.mCityName = cityName;
-        this.mGroup = group;
+        this.mPinYin = pinYin;
+        this.mGroup = mPinYin.substring(0, 1).toUpperCase();
+        this.mCityID = cityID;
         this.mIsFirstInGroup = isFirstInGroup;
         this.mIsLastInGroup = isLastInGroup;
     }
@@ -23,12 +28,20 @@ public class CityInfo {
         this.mCityName = mCityName;
     }
 
+    public String getPinYin() {
+        return mPinYin;
+    }
+
+    public void setPinYin(String mGroup) {
+        this.mPinYin = mGroup;
+    }
+
     public String getGroup() {
         return mGroup;
     }
 
-    public void setGroup(String mGroup) {
-        this.mGroup = mGroup;
+    public String getCityID() {
+        return mCityID;
     }
 
     public boolean isFirstInGroup() {

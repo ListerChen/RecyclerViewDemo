@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,4 +11,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-</LinearLayout>
+    <com.lister.recyclerviewdemo.decoration.SideBar
+        android:id="@+id/city_side_bar"
+        android:layout_width="40dp"
+        android:layout_height="480dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/city_section_text"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_toLeftOf="@+id/city_side_bar"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
