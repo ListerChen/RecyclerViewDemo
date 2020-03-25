@@ -20,6 +20,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="城市选择列表"/>
+        <Button
+            android:id="@+id/btn_animator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ItemAnimator"/>
     </LinearLayout>
 
 </ScrollView>
