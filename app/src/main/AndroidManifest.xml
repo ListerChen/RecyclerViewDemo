@@ -9,13 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".animator.AnimatorActivity"></activity>
+        <activity android:name=".turntable.TurntableActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".animator.AnimatorActivity" />
         <activity android:name=".decoration.ChooseCityActivity" />
         <activity android:name=".inflate.TestInflateActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

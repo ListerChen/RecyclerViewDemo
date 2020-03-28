@@ -10,6 +10,7 @@ import android.view.View;
 import com.lister.recyclerviewdemo.animator.AnimatorActivity;
 import com.lister.recyclerviewdemo.decoration.ChooseCityActivity;
 import com.lister.recyclerviewdemo.inflate.TestInflateActivity;
+import com.lister.recyclerviewdemo.turntable.TurntableActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_inflate).setOnClickListener(this);
         findViewById(R.id.btn_city).setOnClickListener(this);
         findViewById(R.id.btn_animator).setOnClickListener(this);
+        findViewById(R.id.btn_turntable).setOnClickListener(this);
     }
 
     @Override
@@ -33,6 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_animator:
                 startActivity(new Intent(this, AnimatorActivity.class));
+                break;
+            case R.id.btn_turntable:
+                startActivity(new Intent(this, TurntableActivity.class));
                 break;
         }
     }

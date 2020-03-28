@@ -25,6 +25,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ItemAnimator"/>
+        <Button
+            android:id="@+id/btn_turntable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="转盘"/>
     </LinearLayout>
 
 </ScrollView>
